@@ -25,6 +25,17 @@
 </head>
 
 <body>
+    <script>
+        /*sitemap toggle*/
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
     <div class="wrap">
 
         <header>
@@ -81,7 +92,62 @@
                     </li>
                 </ul>
                 <div class="siteMap">
-                    <a href=""><img src="img/btn_sitemap.gif" alt="" style="width: 100%"></a>
+                    <a href="#" onclick="openNav()"><img src="img/btn_sitemap.gif" alt="" style="width: 100%"></a>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlayContent">
+                       <h4>Site Map</h4>
+                        <ul>
+                            <li>
+                                <a href="">예술창작지원</a>
+                                <ul>
+                                    <li><a href="">기획사업</a></li>
+                                    <li><a href="">꿈다락 토요문화</a></li>
+                                    <li><a href="">문화예술교육</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">예술교육</a>
+                                <ul>
+                                    <li><a href="">주간교육</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">지역문화</a>
+                                <ul>
+                                    <li><a href="">기획사업</a></li>
+                                    <li><a href="">지역특성화</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">생활문화</a>
+                                <ul>
+                                    <li><a href="">공고/공지</a></li>
+                                    <li><a href="">언론보도</a></li>
+                                    <li><a href="">연간일정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">열린광장</a>
+                                <ul>
+                                    <li><a href="">공고/공지</a></li>
+                                    <li><a href="">언론보도</a></li>
+                                    <li><a href="">연간일정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">센터소개</a>
+                                <ul>
+                                    <li><a href="">센터소개</a></li>
+                                    <li><a href="">조직및업무</a></li>
+                                    <li><a href="">CI소개</a></li>
+                                    <li><a href="">오시는길</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--overlayContent-->
                 </div>
                 <ul class="util">
                     <li><a href="">로그인</a></li>
@@ -96,7 +162,7 @@
                     <div class="slide_txt">
                         <section>
                             <p>경기지역<br>특성화문화예술<br>교육지원사업</p>
-                            <p>오산문화재단에서<br> 경기지역 예술특성화를 위한<br> 특성화 문화예술 교육지원사업을<br> 시작합니다</p> 
+                            <p>오산문화재단에서<br> 경기지역 예술특성화를 위한<br> 특성화 문화예술 교육지원사업을<br> 시작합니다</p>
                             <a href="">자세히보기 ></a>
                         </section>
                     </div>
@@ -106,7 +172,7 @@
                     <div class="slide_txt">
                         <section>
                             <p>오산꿈꾸미<br>토요문화학교</p>
-                            <p>2018년부터 시작하는<br> 오산꿈꾸미 토요문화학교의<br> 일정을 확인해해보세요</p> 
+                            <p>2018년부터 시작하는<br> 오산꿈꾸미 토요문화학교의<br> 일정을 확인해해보세요</p>
                             <a href="">자세히보기 ></a>
                         </section>
                     </div>
@@ -116,7 +182,7 @@
                     <div class="slide_txt">
                         <section>
                             <p>꿈꾸미<br>토요문화학교<br>하반기<br>아카데미</p>
-                            <p>꿈꾸미 토요문화학교의<br> 하반기 아카데미는<br> 어떻게 이루어졌을까요?</p> 
+                            <p>꿈꾸미 토요문화학교의<br> 하반기 아카데미는<br> 어떻게 이루어졌을까요?</p>
                             <a href="">자세히보기 ></a>
                         </section>
                     </div>
@@ -247,8 +313,8 @@
         <div class="footerWrap">
             <footer>
                 <div class="footerCon1">
+                    <h4><img src="img/footer_logo.png" alt="" style="height: 100px"></h4>
                     <div class="footerCon11">
-                        <h4><img src="img/footer_logo.png" alt="" style="height: 100px"></h4>
                         <p>
                             경기도 오산시 아비로 667 오산문화재단<br>
                             <span>OsanCulture. 667. Nonhyunro. Gangnam-gu, Seoul</span>
@@ -262,7 +328,7 @@
                             <span>Fax</span> 031-1353-7524
                         </p>
                     </div>
-                    <a href="#" class="familySite">FAMILYSITE</a>
+                    <a href="#" class="familySite">FAMILYSITE <span><i class="fas fa-caret-down"></i></span></a>
 
                 </div>
                 <div class="footerCon2">

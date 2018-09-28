@@ -82,7 +82,7 @@ header h1 {display: inline-block; height: 110px; margin-left: 20px;}
 
 /*con1*/
 .con1 {text-align: center; padding: 70px 0px; background: #e3ecf3;}
-.quickLink li {display: inline-block; width: 150px; margin-top: 45px;}
+.quickLink li {display: inline-block; width: 130px; margin-top: 45px;}
 .quickLink li a {display: block;}
 .quickLink li div {display: inline-block; height: 80px; width: 80px; }
 .quickLink li div img {width: 100%; }
@@ -139,17 +139,37 @@ header h1 {display: inline-block; height: 110px; margin-left: 20px;}
 .footerWrap {width: 100%; margin-top: 100px; background: #444;}
 footer {width: 940px; margin: 0 auto; padding: 30px 0px; color:#bbb; letter-spacing: -0.3px;}
 
-.footerCon1 {position: relative;}
-.footerCon11 {width: 100%; margin-right: 20px; overflow: hidden;}
-.footerCon11 h4 {float: left; margin-right: 20px;}
-.footerCon11 p {font:  15px/1.5 'Nanum Gothic', sans-serif; color: #aaa; margin-top: 15px;}
+.footerCon1 {position: relative; overflow: hidden;}
+.footerCon1 h4 {float: left; margin-right: 20px;}
+.footerCon11 {margin-right: 20px; float: left; }
+.footerCon11 p {font:  13px/1.5 'Nanum Gothic', sans-serif; color: #aaa; margin-bottom: 10px;}
+.footerCon11 p:nth-last-of-type(1) {margin-bottom: 0px;}
 .footerCon11 span {color:#777;}
 .footerCon11 span:nth-of-type(2) {margin-left: 10px;}
 
 .footerCon2 {width: 100%; overflow: hidden; margin-top: 15px; padding-top: 15px;  border-top: 1px solid #777;}
-.footerCon2 p {display: inline;}
+.footerCon2 p {font:  10px/1.5 'Nanum Gothic', sans-serif; color: #999; display: inline;}
 .footerCon2 p:nth-last-child(1) {float: right;}
 .footerCon2 p:nth-last-child(2) {float: right;}
 .footerCon2 p:nth-last-child(2)::before {content: "l"; margin: 0px 7px}
 
-.familySite {float: right; width: 150px; border: solid 1px #888; font-size: 11px; color:#aaa; padding: 7px; margin-top: 24px; position: absolute; right: 0px; bottom: 0px;}
+.familySite {float: right; width: 150px; border: solid 1px #888; font-size: 11px; color:#aaa; padding: 7px 10px; margin-top: 24px; position: absolute; right: 0px; bottom: 0px;}
+.familySite span {float: right;}
+
+/*site map*/
+.overlay {height: 0%; width: 100%; position: fixed; z-index: 9999; top: 0; left: 0; background-color: rgb(0,0,0);    background-color: rgba(0,0,0, 0.9); overflow-x: hidden;    transition: 0.5s;}
+
+.overlayContent {position: relative; width: 600px; height: 600px; margin: 0 auto; overflow: hidden; top:50%; margin-top: -300px;}
+.overlayContent h4 {font-size: 45px; font-family: 'Sunflower', sans-serif; color: #fff; text-align: center; border-bottom: 2px solid #fff; width: 200px; margin: 0 auto; margin-top: 30px; margin-bottom: 50px;}
+.overlayContent>ul>li {float: left; margin-bottom: 30px; height: 200px; width: 200px; text-align: center;}
+.overlayContent>ul>li>a {display: inline-block; margin-bottom: 20px; color: #fff; font: bold 30px/1.5 'Nanum Gothic', sans-serif;}
+.overlayContent>ul>li>ul>li {margin-bottom: 10px;}
+.overlayContent>ul>li>ul>li>a {color: #ccc; font: 20px/1.5 'Nanum Gothic', sans-serif;}
+.overlayContent>ul>li>ul>li>a:hover {color: #fff; border-bottom: 1px solid;}
+
+.overlay .closebtn {position: absolute; top: 20px; right: 45px; font-size: 60px;}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {font-size: 40px; top: 15px; right: 35px;  }
+}
