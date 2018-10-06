@@ -320,7 +320,7 @@ header h1 img {height: 100%;}
 .con2 div:nth-last-child(1) {margin-right: 0px;}
 .con2>div img {position: relative; bottom: 50%;}
 .con2 div div {bottom: 0px; }
-.con2 div p {margin-top: 10px; font: 12px/1.5 'Nanum Gothic', sans-serif; letter-spacing: -1px;}
+.con2 div p {margin-top: 10px; font: 11px/1.5 'Nanum Gothic', sans-serif;}
 
 
 /*인스타그램*/
