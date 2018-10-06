@@ -9,10 +9,12 @@
 header {width:100%; }
 .headerIn {width:1200px;  margin: 30px auto 30px; position: relative;}
 header h1 {display: inline-block; height: 110px; margin-left: 20px;}
+header h1 img {height: 110px;}
+
 
 /*gnbBg*/
 .gnbBg {background: rgba(0, 0, 0, 0.8); width: 100%; height: 0px; position: absolute; right: 0px; height: 180px; top:140px; z-index: 10; display: none; transition: all 0.5s; opacity: 0;}
-.gnbBg.hover {display: block; top:140px; opacity: 1; }
+.gnbBg.hover {display: block; opacity: 1; }
 
 /*gnb*/
 .gnb {position: absolute; top:70px; right: 60px;  }
@@ -141,6 +143,7 @@ footer {width: 940px; margin: 0 auto; padding: 30px 0px; color:#bbb; letter-spac
 
 .footerCon1 {position: relative; overflow: hidden;}
 .footerCon1 h4 {float: left; margin-right: 20px;}
+.footerCon1 h4 img {height: 100px;}
 .footerCon11 {margin-right: 20px; float: left; }
 .footerCon11 p {font:  13px/1.5 'Nanum Gothic', sans-serif; color: #aaa; margin-bottom: 10px;}
 .footerCon11 p:nth-last-of-type(1) {margin-bottom: 0px;}
@@ -162,14 +165,210 @@ footer {width: 940px; margin: 0 auto; padding: 30px 0px; color:#bbb; letter-spac
 .overlayContent {position: relative; width: 600px; height: 600px; margin: 0 auto; overflow: hidden; top:50%; margin-top: -300px;}
 .overlayContent h4 {font-size: 45px; font-family: 'Sunflower', sans-serif; color: #fff; text-align: center; border-bottom: 2px solid #fff; width: 200px; margin: 0 auto; margin-top: 30px; margin-bottom: 50px;}
 .overlayContent>ul>li {float: left; margin-bottom: 30px; height: 200px; width: 200px; text-align: center;}
-.overlayContent>ul>li>a {display: inline-block; margin-bottom: 20px; color: #fff; font: bold 30px/1.5 'Nanum Gothic', sans-serif;}
+.overlayContent>ul>li>a {display: inline-block; margin-bottom: 20px; color: #fff; font: bold 20px/40px 'Nanum Gothic', sans-serif; background: #FE7F2D; width: 95%; height: 40px;}
 .overlayContent>ul>li>ul>li {margin-bottom: 10px;}
-.overlayContent>ul>li>ul>li>a {color: #ccc; font: 20px/1.5 'Nanum Gothic', sans-serif;}
+.overlayContent>ul>li>ul>li>a {color: #ccc; font: 18px/1.5 'Nanum Gothic', sans-serif;}
 .overlayContent>ul>li>ul>li>a:hover {color: #fff; border-bottom: 1px solid;}
 
 .overlay .closebtn {position: absolute; top: 20px; right: 45px; font-size: 60px;}
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {font-size: 40px; top: 15px; right: 35px;  }
+
+
+/*------------------------타블렛------------------------*/
+@media screen and (min-width:640px) and (max-width:939px) {
+
+/*header*/
+.headerIn {width:100%;  margin: 10px auto 10px;}
+header h1 {display: inline-block; height: 70px; margin-left: 10px;}
+header h1 img {height: 100%;}
+
+/*gnbBg*/
+.gnbBg {background: rgba(0, 0, 0, 0.8); width: 100%; height: 0px; position: absolute; right: 0px; height: 180px; top:80px; z-index: 10; display: none; transition: all 0.5s; opacity: 0;}
+.gnbBg.hover {display: block; opacity: 1; }
+
+/*gnb*/
+.gnb {position: absolute; top:40px; right: 60px;  }
+.gnb>li{float:left; text-align: center; position: relative; height: 50px; z-index: 30;}
+.gnb>li a{font: bold 16px/1 'Nanum Gothic', sans-serif; margin-left: 20px;}
+.gnb>li>ul {top:40px;}
+.gnb>li>ul>li>a {font-size: 13px;}
+
+.siteMap { width: 25px; height: 25px; top:35px; right: 15px;}
+
+
+/*util*/
+.util {right: 10px;}
+
+
+/*슬라이더 프레임*/
+#slider1 { width:100%; height: 400px; overflow: hidden;}
+
+/*슬라이더 패널*/
+#slider1 .slide_txt p {font: 35px/1.1 'Sunflower', sans-serif; margin-top: 50px;}
+#slider1 .slide_txt p:nth-of-type(2) {font: 15px/1.3 'Nanum Gothic', sans-serif; margin-top: 10px;}
+#slider1 .slide_txt a{font:13px/1.7 'Nanum Gothic', sans-serif; color:#FE7F2D; margin-top: 20px; }
+#slider1 .slide_txt a:hover {border:1px solid #FE7F2D; color:#fff; background: #FE7F2D;}
+#slider1 .slide_img {height: 100%;  width: 650px; float: right;}
+#slider1 .slide_img img {height: 100%;}
+    
+/*content*/
+.content {width: 95%;}
+
+
+.marginTop {margin-top: 60px;}
+
+/*con1*/
+.con1 {padding: 50px 0px;}
+.quickLink li {display: inline-block; width: 15%; margin-top: 30px;}
+.quickLink li p {font: 15px/1 'Nanum Gothic', sans-serif; margin-top: 15px;}
+
+
+/*con2*/
+.con2 {margin-top: 50px; overflow: hidden;}
+.con2>div:not(:nth-of-type(1)){width: 32%;  height: 300px; margin-right: 2%; margin-top: 40px;}
+.con2 div:nth-last-child(1) {margin-right: 0px;}
+.con2 div div {bottom: 0px; }
+.con2 div p {margin-top: 10px; font: 12px/1.5 'Nanum Gothic', sans-serif; letter-spacing: -1px;}
+
+
+/*인스타그램*/
+#instagram {width:100%; margin: 50px auto 50px;}
+#instagram>ul {margin-top: 40px;}
+
+/*con3*/
+.con3 {width: 49%; margin-right: 2%; float: left; overflow: hidden;}
+.con3 div {width: 49%; margin-right: 2%;}
+.con3 div div img {width: 100%;}
+
+/*con4*/
+.con4 {width: 49%;}
+.con4 li a {font: 11px/1.7 'Nanum Gothic', sans-serif; }
+.con4 li .noticeTitle {font: 11px/1.7 'Nanum Gothic', sans-serif;}
+.con4 li .noticeTitle::after { width: 3px;}
+
+/*footer*/
+.footerWrap {margin-top: 50px;}
+footer {width: 95%;}
+
+.footerCon1 h4 {float: left; margin-right: 10px;}
+.footerCon1 h4 img {height: 75px;}
+.footerCon11 {margin-right: 0px;}
+.footerCon11 p {font:  11px/1.3 'Nanum Gothic', sans-serif; margin-bottom: 5px;}
+
+/*site map*/
+
+.overlayContent { width: 500px;}
+.overlayContent h4 {font-size: 35px; width: 150px;}
+.overlayContent>ul>li {height: 170px; width: 165px; }
+.overlayContent>ul>li>a {font: bold 18px/40px 'Nanum Gothic', sans-serif; }
+.overlayContent>ul>li>ul>li>a {font: 17px/1.5 'Nanum Gothic', sans-serif;}
+}
+
+
+
+/*---------------------모바일-------------------------*/
+@media screen and (min-width:0px) and (max-width:639px) {
+/*header*/
+.headerIn {width:100%;  margin: 10px auto 10px;}
+header h1 {display: inline-block; height: 50px; margin-left: 20px;}
+header h1 img {height: 100%;}
+
+/*gnb*/
+.gnb {display: none;}
+
+.siteMap { width: 30px; height: 30px; top:12px; right: 20px;}
+
+/*util*/
+.util {display: none;}
+
+
+/*슬라이더 프레임*/
+#slider1 { width:100%; height:300px; }
+
+/*슬라이더 패널*/
+#slider1 .slide_txt {display: none;}
+#slider1 .slide_img {float: left; width: 100%}
+#slider1 .slide_img img {width: 100%;}
+    
+/*mainTitle*/
+.mainTitle {text-align: center;}
+.mainTitle h2{font: bold 18px/1 'Nanum Gothic', sans-serif; color:#444}
+.mainTitle h2::after {content: ""; display: block; width: 30px; height: 1px; background: #000; margin: 15px auto;}
+.mainTitle p{font: 11px/1 'Nanum Gothic', sans-serif; color:#999; margin-top: 10px;}
+
+/*subTitle*/
+.subTitle {display: block; width: 100%; overflow: hidden; margin-bottom: 15px; text-align: center;}
+.subTitle h2 {display: inline-block; font:bold 17px/1 'Nanum Gothic', sans-serif; color:#000; border-top: solid 1px #000; padding-top: 12px;}
+
+.subTitle>a {display: none;}
+
+/*content*/
+.content {width: 90%;}
+
+.marginTop {margin-top: 60px;}
+
+/*con1*/
+.con1 {padding: 50px 0px;}
+.quickLink  {width: 80%; margin: 0 auto; padding-top: 20px;}
+.quickLink li {display: inline-block; width: 30%; margin-top: 20px;}
+.quickLink li p {font: 14px/1 'Nanum Gothic', sans-serif; margin-top: 15px;}
+
+
+/*con2*/
+.con2 {margin-top: 50px; overflow: hidden;}
+.con2>div:not(:nth-of-type(1)){width: 100%;  height: 250px; margin-right: 2%; margin-top: 20px;}
+.con2 div:nth-last-child(1) {margin-right: 0px;}
+.con2>div img {position: relative; bottom: 50%;}
+.con2 div div {bottom: 0px; }
+.con2 div p {margin-top: 10px; font: 12px/1.5 'Nanum Gothic', sans-serif; letter-spacing: -1px;}
+
+
+/*인스타그램*/
+#instagram {width:100%; margin: 50px auto 50px;}
+#instagram>ul {margin-top: 40px;}
+#instagram>ul>li:nth-of-type(1) {width:28.4%; height:100px;}/*width:14.2%; height:200px;*/
+#instagram>ul>li:nth-of-type(2) {width:14.2%; height:100px;}
+#instagram>ul>li:nth-of-type(3) {width:28.8%; height:100px;}
+#instagram>ul>li:nth-of-type(4) {width:14.2%; height:50px;}
+#instagram>ul>li:nth-of-type(5) {width:14.2%; height:50px;}
+#instagram>ul>li:nth-of-type(6) {width:28.4%; height:50px;}
+#instagram>ul>li:nth-of-type(7) {width:14.2%; height:50px;}
+#instagram>ul>li:nth-of-type(8) {width:28.4%; height:50px;}
+#instagram>ul>li:nth-of-type(9) {width:14.2%; height:50px;}
+#instagram>ul>li:nth-of-type(10) {width:28.4%; height:50px;}
+    
+/*con3*/
+.con3 {width: 100%; margin-right: 2%; float: left; overflow: hidden; margin-bottom: 30px;}
+.con3 div {width: 49%; margin-right: 2%;}
+.con3 div div {overflow: hidden;}
+.con3 div div img {width: 100%;}
+
+/*con4*/
+.con4 {width: 100%;}
+.con4 li a {font: 11px/1.7 'Nanum Gothic', sans-serif; }
+.con4 li>span {display: none;}
+.con4 li .noticeTitle {font: 11px/1.7 'Nanum Gothic', sans-serif;}
+.con4 li .noticeTitle::after { width: 3px;}
+
+/*footer*/
+.footerWrap {margin-top: 50px;}
+footer {width: 95%; text-align: center;}
+
+.footerCon1 h4 {display: none;}
+.footerCon1 h4 img {height: 75px;}
+.footerCon11 {margin-right: 0px;}
+.footerCon11 p {font:  11px/1.3 'Nanum Gothic', sans-serif; margin-bottom: 5px;}
+    
+.footerCon2 p:nth-last-child(1) {display: none;}
+.footerCon2 p:nth-last-child(2) {display: none;}
+    
+.familySite {display: none;}
+
+/*site map*/
+
+.overlayContent { width: 90%; height: 500px; margin-top: -250px;}
+.overlayContent h4 {font-size: 35px; width: 150px;}
+.overlayContent>ul>li {height: 170px; width: 33%; }
+.overlayContent>ul>li>a {font: bold 17px/40px 'Nanum Gothic', sans-serif; }
+.overlayContent>ul>li>ul>li>a {font: 15px/1.5 'Nanum Gothic', sans-serif;}
 }
