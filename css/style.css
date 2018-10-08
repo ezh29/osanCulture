@@ -152,24 +152,24 @@ header h1 img {height: 110px;}
 
 /*footer*/
 .footerWrap {width: 100%; margin-top: 100px; background: #444;}
-footer {width: 940px; margin: 0 auto; padding: 30px 0px; color:#bbb; letter-spacing: -0.3px;}
+footer {width: 940px; margin: 0 auto; padding: 30px 0px; color:#C0C0C0; letter-spacing: -0.3px;}
 
 .footerCon1 {position: relative; overflow: hidden;}
 .footerCon1 h4 {float: left; margin-right: 20px;}
 .footerCon1 h4 img {height: 100px;}
 .footerCon11 {margin-right: 20px; float: left; }
-.footerCon11 p {font:  13px/1.5 'Nanum Gothic', sans-serif; color: #aaa; margin-bottom: 10px;}
+.footerCon11 p {font:  13px/1.5 'Nanum Gothic', sans-serif; color: #C0C0C0; margin-bottom: 10px;}
 .footerCon11 p:nth-last-of-type(1) {margin-bottom: 0px;}
-.footerCon11 span {color:#777;}
+.footerCon11 span {color:#999;}
 .footerCon11 span:nth-of-type(2) {margin-left: 10px;}
 
-.footerCon2 {width: 100%; overflow: hidden; margin-top: 15px; padding-top: 15px;  border-top: 1px solid #777;}
-.footerCon2 p {font:  10px/1.5 'Nanum Gothic', sans-serif; color: #999; display: inline;}
+.footerCon2 {width: 100%; overflow: hidden; margin-top: 15px; padding-top: 15px;  border-top: 1px solid #C0C0C0;}
+.footerCon2 p {font:  10px/1.5 'Nanum Gothic', sans-serif; color: #C0C0C0; display: inline;}
 .footerCon2 p:nth-last-child(1) {float: right;}
 .footerCon2 p:nth-last-child(2) {float: right;}
 .footerCon2 p:nth-last-child(2)::before {content: "l"; margin: 0px 7px}
 
-.familySite {float: right; width: 150px; border: solid 1px #888; font-size: 11px; color:#aaa; padding: 7px 10px; margin-top: 24px; position: absolute; right: 0px; bottom: 0px;}
+.familySite {float: right; width: 150px; border: solid 1px #C0C0C0; font-size: 11px; color:#C0C0C0; padding: 7px 10px; margin-top: 24px; position: absolute; right: 0px; bottom: 0px;}
 .familySite span {float: right;}
 
 /*site map*/
