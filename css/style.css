@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300');
 /*font-family: 'Sunflower', sans-serif;
 */
+/* sunflower-300 - latin */
+@font-face {
+  font-family: 'Sunflower';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/sunflower-v5-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Sunflower Light'), local('Sunflower-Light'),
+       url('../fonts/sunflower-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/sunflower-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/sunflower-v5-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/sunflower-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/sunflower-v5-latin-300.svg#Sunflower') format('svg'); /* Legacy iOS */
+}
 
 .wrap {position: relative;}
 
